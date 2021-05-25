@@ -1,0 +1,21 @@
+<?php
+
+namespace DummyNamespace;
+
+use Lorisleiva\Actions\ActionRequest;
+use Lorisleiva\Actions\Concerns\AsController;
+
+class DummyClass
+{
+    use AsController;
+
+    public function asController(ActionRequest $request)
+    {
+
+    }
+
+    public function rules(): array
+    {
+        return [];
+    }
+}

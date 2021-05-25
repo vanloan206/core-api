@@ -1,0 +1,9 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Domain\Shared\Resources\BaseCollection;
+
+class {{ class }} extends BaseCollection
+{
+}

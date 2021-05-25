@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Domain\Shared\Resources\BaseResource;
+
+class {{ class }} extends BaseResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     *
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
+    public function toArray($request)
+    {
+        return parent::toArray($request);
+    }
+}
