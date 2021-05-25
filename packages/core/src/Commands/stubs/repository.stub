@@ -1,0 +1,48 @@
+<?php
+
+namespace DummyNamespace;
+
+use Mi\Core\Repositories\BaseRepository;
+
+class DummyClass extends BaseRepository
+{
+    /**
+     * Get the model of repository
+     *
+     * @return string
+     */
+    public function getModel()
+    {
+        return ;
+    }
+
+    /**
+     * Get list of filterable fields
+     *
+     * @return array
+     */
+    public function filterableFields()
+    {
+        return [];
+    }
+
+    /**
+     * Get list of orderable fields
+     *
+     * @return array
+     */
+    public function orderableFields()
+    {
+        return [];
+    }
+
+    /**
+     * Get list of allowable relations
+     *
+     * @return array
+     */
+    public function allowableRelations()
+    {
+        return [];
+    }
+}

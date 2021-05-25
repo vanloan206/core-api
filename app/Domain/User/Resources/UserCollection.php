@@ -6,4 +6,5 @@ use App\Domain\Shared\Resources\BaseCollection;
 
 class UserCollection extends BaseCollection
 {
+    //
 }

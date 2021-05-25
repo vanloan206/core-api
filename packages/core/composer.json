@@ -1,0 +1,39 @@
+{
+    "name": "mi/core",
+    "description": "Core Dependencies for Laravel v5",
+    "type": "library",
+    "authors": [
+        {
+            "name": "My Truong",
+            "email": "hoangmy92@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mi\\Core\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mi\\Core\\CoreServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+    },
+    "scripts": {
+        "lint": [
+            "./vendor/bin/phpcs src",
+            "./vendor/bin/phpstan analyse --no-progress",
+            "./vendor/bin/phpmd src text ./phpmd.xml"
+        ]
+    }
+}
