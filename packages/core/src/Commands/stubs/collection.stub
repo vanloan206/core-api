@@ -1,0 +1,9 @@
+<?php
+
+namespace DummyNamespace;
+
+use Mi\Core\Resources\BaseCollection;
+
+class DummyClass extends BaseCollection
+{
+}
