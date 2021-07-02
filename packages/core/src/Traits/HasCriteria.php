@@ -26,7 +26,7 @@ trait HasCriteria
     public function pushCriteria($criteria)
     {
         if (is_string($criteria)) {
-            $criteria = new $criteria;
+            $criteria = new $criteria();
         }
 
         if (! $criteria instanceof CriteriaInterface) {

@@ -6,24 +6,16 @@ use Illuminate\Contracts\Validation\Rule;
 
 class Phone implements Rule
 {
-    /**
-     * @var string
-     */
-    const REGEX = "/^0[\d]{9,10}$/";
+    /** @var string */
+    public const REGEX = "/^0[\d]{9,10}$/";
 
-    /**
-     * @var int
-     */
-    const MIN = 10;
+    /** @var int */
+    public const MIN = 10;
 
-    /**
-     * @var int
-     */
-    const MAX = 11;
+    /** @var int */
+    public const MAX = 11;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $message;
 
     /**

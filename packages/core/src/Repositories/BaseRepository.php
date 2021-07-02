@@ -18,9 +18,9 @@ use Mi\Core\Traits\HasScope;
  */
 abstract class BaseRepository implements RepositoryInterface
 {
-    use HasScope,
-        HasCriteria,
-        HasOrder;
+    use HasScope;
+    use HasCriteria;
+    use HasOrder;
 
     /**
      * @var \Illuminate\Contracts\Foundation\Application
@@ -84,7 +84,7 @@ abstract class BaseRepository implements RepositoryInterface
     {
         $instance = $this->app->make($this->getModel());
 
-        if (! $instance instanceof Model) {
+        if (!$instance instanceof Model) {
             throw RepositoryException::invalidModel();
         }
 

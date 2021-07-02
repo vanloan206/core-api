@@ -8,11 +8,11 @@ use Mi\Core\Rules\PositiveInt32;
 /** @SuppressWarnings(PHPMD.NumberOfChildren.minimum) */
 abstract class BaseRequest extends FormRequest
 {
-    const INT_32_MAX = 2147483647;
-    const INT_32_MIN = 1;
-    const ORDER_DEFAULT_LENGTH = 100;
-    const WITH_DEFAULT_LENGTH = 100;
-    const PER_PAGE_DEFAULT_MAX = 200;
+    public const INT_32_MAX = 2147483647;
+    public const INT_32_MIN = 1;
+    public const ORDER_DEFAULT_LENGTH = 100;
+    public const WITH_DEFAULT_LENGTH = 100;
+    public const PER_PAGE_DEFAULT_MAX = 200;
 
     /**
      * Common list rules
@@ -25,7 +25,7 @@ abstract class BaseRequest extends FormRequest
             'page' => [
                 'bail',
                 'sometimes',
-                new PositiveInt32,
+                new PositiveInt32(),
             ],
             'per_page' => [
                 'bail',

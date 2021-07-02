@@ -6,8 +6,8 @@ use Illuminate\Contracts\Validation\Rule;
 
 class WebsiteUrl implements Rule
 {
-    const WEBSITE_URL_REGEX = '/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?/';
-    const MAX = 255;
+    public const WEBSITE_URL_REGEX = '/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?/';
+    public const MAX = 255;
 
     /**
      * @var int

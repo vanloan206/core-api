@@ -5,13 +5,13 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
-        "lorisleiva/laravel-actions": "^1.2",
+        "lorisleiva/laravel-actions": "^2.0",
         "spatie/laravel-query-builder": "^3.4"
     },
     "require-dev": {

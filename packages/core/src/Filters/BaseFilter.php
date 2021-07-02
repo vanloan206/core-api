@@ -10,7 +10,7 @@ use Mi\Core\Contracts\FilterInterface;
 /** @SuppressWarnings(PHPMD.NumberOfChildren) */
 abstract class BaseFilter implements FilterInterface
 {
-    const DEFAULT_TIMEZONE = 'Asia/Tokyo';
+    public const DEFAULT_TIMEZONE = 'Asia/Tokyo';
 
     /**
      * @var \Illuminate\Support\Collection

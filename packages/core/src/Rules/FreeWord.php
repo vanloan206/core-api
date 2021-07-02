@@ -6,9 +6,9 @@ use Illuminate\Contracts\Validation\Rule;
 
 class FreeWord implements Rule
 {
-    const MIN_INT = 1;
-    const MAX_INT_2 = 32767;
-    const MAX_INT_4 = 2147483647;
+    public const MIN_INT = 1;
+    public const MAX_INT_2 = 32767;
+    public const MAX_INT_4 = 2147483647;
 
     /** @var int $min */
     protected $min = self::MIN_INT;
