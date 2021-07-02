@@ -67,6 +67,7 @@ class MakeException extends GeneratorCommand
     protected function replacePrefix($name, $content)
     {
         $class = str_replace($this->getNamespace($name) . '\\', '', $name);
+
         $prefix = Str::snake(str_replace(['Exception', 'exception'], '', $class));
 
         return str_replace('DummyPrefix', $prefix, $content);
