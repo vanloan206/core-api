@@ -6,12 +6,10 @@ use Illuminate\Contracts\Validation\Rule;
 
 class PositiveInt32 implements Rule
 {
-    const MIN = 0;
-    const MAX = 2147483648;
+    public const MIN = 0;
+    public const MAX = 2147483648;
 
-    /**
-     * @var array
-     */
+    /** @var array */
     protected $includes;
 
     /**

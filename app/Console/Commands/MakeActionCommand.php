@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use Lorisleiva\Actions\Commands\MakeActionCommand as ConsoleMakeActionCommand;
+use Lorisleiva\Actions\Console\MakeActionCommand as ConsoleMakeActionCommand;
 use Symfony\Component\Console\Input\InputOption;
 
 class MakeActionCommand extends ConsoleMakeActionCommand

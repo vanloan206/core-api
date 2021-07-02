@@ -70,7 +70,7 @@ class CoreServiceProvider extends ServiceProvider
         });
 
         Response::macro('successWithoutData', function () {
-            return response()->json([ 'success' => true ], 200);
+            return response()->json(['success' => true], 200);
         });
 
         Response::macro('notModified', function ($data) {
@@ -115,14 +115,14 @@ class CoreServiceProvider extends ServiceProvider
             if ($this->isQueryable($column)) {
                 [$query, $bindings] = $this->createSub($column);
 
-                $column = new Expression('('.$query.')');
+                $column = new Expression('(' . $query . ')');
 
                 $this->addBinding($bindings, $this->unions ? 'unionOrder' : 'order');
             }
 
             $direction = strtolower($direction);
 
-            if (! in_array($direction, ['asc', 'desc', 'desc nulls last'], true)) {
+            if (!in_array($direction, ['asc', 'desc', 'desc nulls last'], true)) {
                 throw new InvalidArgumentException('Order direction must be "asc" or "desc".');
             }
 

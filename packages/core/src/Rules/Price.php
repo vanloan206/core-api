@@ -6,8 +6,8 @@ use Illuminate\Contracts\Validation\Rule;
 
 class Price implements Rule
 {
-    const MIN = 0;
-    const MAX = 99999999;
+    public const MIN = 0;
+    public const MAX = 99999999;
 
     /**
      * @var int $min

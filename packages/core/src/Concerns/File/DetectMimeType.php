@@ -6,8 +6,8 @@ use Illuminate\Support\Str;
 
 class DetectMimeType
 {
-    const DEFAULT_MIME_TYPE = 'application/octet-stream'; // general purpose MIME-type
-    const MIME_TYPES = [
+    public const DEFAULT_MIME_TYPE = 'application/octet-stream'; // general purpose MIME-type
+    public const MIME_TYPES = [
         'aac' => 'audio/aac', // AAC audio
         'abw' => 'application/x-abiword', // AbiWord document
         'arc' => 'application/octet-stream', // Archive document (multiple files embedded)
